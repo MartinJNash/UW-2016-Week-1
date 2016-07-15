@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2ko-X7-TvM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lns-8g-dnl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OldLondon.ttf">
+            <string>OldLondon</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Dictionary Entries-->
         <scene sceneID="vKa-Fs-jKy">
@@ -58,6 +63,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn0-fI-1jc">
+                                <rect key="frame" x="101" y="333" width="247" height="134"/>
+                                <fontDescription key="fontDescription" name="OldLondon" family="Old London" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -71,41 +82,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J66-Yu-QOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1713" y="1007"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="S5O-jZ-zuQ">
-            <objects>
-                <viewController id="2ko-X7-TvM" customClass="ViewController" customModule="UW_Week_1_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ISp-CH-l6p"/>
-                        <viewControllerLayoutGuide type="bottom" id="p8p-Gn-ziF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YTF-Iy-ut2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBq-dg-qxL">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.095393233001232147" green="0.74386775493621826" blue="0.087621234357357025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="xs9-1o-r8F"/>
-                                    <constraint firstAttribute="width" constant="240" id="zsC-VX-Zs7"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="lBq-dg-qxL" firstAttribute="centerX" secondItem="YTF-Iy-ut2" secondAttribute="centerX" id="cb9-1k-pKP"/>
-                            <constraint firstItem="lBq-dg-qxL" firstAttribute="centerY" secondItem="YTF-Iy-ut2" secondAttribute="centerY" id="odl-wL-Gqc"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="coloredBox" destination="lBq-dg-qxL" id="9PA-3l-eCy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gnW-gM-d2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="321" y="325"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wlH-dM-7ld">

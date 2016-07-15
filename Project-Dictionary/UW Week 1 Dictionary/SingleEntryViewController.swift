@@ -6,6 +6,11 @@
 //  Copyright © 2016 Martin Nash. All rights reserved.
 //
 
+struct BasicUI {
+    
+}
+
+
 import UIKit
 
 class SingleEntryViewController: UIViewController {
